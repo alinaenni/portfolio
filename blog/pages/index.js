@@ -1,132 +1,62 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/homelayout.module.css';
 import Link from 'next/link';
+import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
-export default function Home() {
+
+export default function HomeLayout() {
   return (
-    <div className={styles.container}>
+    <div className={styles.pageContainer}>
       <Head>
         <title>Portfolio | Alina Rouvinen</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className={styles.title}>
-          Read more here <a href="/posts/first-post">first post</a>
-        </h1>
+      <div className={styles.backgroundContainer}>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <div className={styles.headerbox}>
+          <div className="navbar">
+            <div className="name">
+              Supersymmetry
+            </div>
+            <div className="navigation">
+              <div><Link href="/index"><div className="active">Home</div></Link></div>
+              <div><Link href="/blog"><div className="normal">Blog</div></Link></div>
+              <div><Link href="/contact"><div className="normal">Contact</div></Link></div>
+            </div>
+          </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className={styles.introtext}>
+            Welcome!<br />
+            My name is Alina, and this is my
+            <TypeAnimation 
+              sequence={[' professional portfolio.', 3000, ' personal blog.', 3000, ' dynamic curriculum vitae.', 3000]}
+              speed={80}
+              repeat={Infinity}
+            /><br />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <p>I named this place <i>Supersymmetry</i> because I am fascinated by particle physics and because I simply like the word.</p>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          </div>
         </div>
-      </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+        <div className={styles.me}>
+          <div className={styles.info}>
+          <h1>
+          nMy academic background is in linguistics and phonetics, 
+          but I have always been interested in web development and design. I 
+          currently work as a technical writer.</h1>
+          </div>
+          <div className={styles.pic}>
+          </div>
+        </div>
+        
+        <footer>
+          <p>Web design by Alina</p>
+          <p>Background image by <a href="https://www.pexels.com/@shtefutsa/">Andras Stefuca</a></p>
+        </footer>
+  </div>
+</div>
   );
 }

@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
-import Layout from '../../components/layout';
+import Bloglayout from '../../components/Blog';
 
-export default function FirstPost() {
+export default function Blog() {
   return (
-    <Layout>
+    <Bloglayout>
         <Head>
             <title>First Post</title>
       </Head>
@@ -14,6 +14,7 @@ export default function FirstPost() {
       <h2>
         <Link href="/">Back to home</Link>
       </h2>
-    </Layout>
+
+    </Bloglayout>
   );
 }
