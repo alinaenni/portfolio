@@ -44,7 +44,7 @@ export default function HomeLayout() {
         <div className={styles.me}>
           <div className={styles.info}>
           <h1>
-          nMy academic background is in linguistics and phonetics, 
+          My academic background is in linguistics and phonetics, 
           but I have always been interested in web development and design. I 
           currently work as a technical writer.</h1>
           </div>
