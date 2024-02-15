@@ -27,6 +27,16 @@ body {
   src: url('/fonts/CourierPrime-Italic.ttf');
   font-style: italic;
 }
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('/fonts/CrimsonText-Reg.ttf');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('CrimsonText-Reg'), url('/fonts/CrimsonText-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .navbar {
   width: 60vw;
   display: flex;
@@ -42,13 +52,13 @@ body {
   flex: 5;
   display: flex;
   align-items: center;
-  font-family: 'Quicksand Bold', serif;
-  font-size: 1.5vw;
+  font-family: 'Crimson Text', serif;
+  font-size: 2.2rem;
+  letter-spacing: 1pt;
 }
 .navigation {
   flex: 5; 
   display: flex;
-  font-family: 'Quicksand', sans-serif;
 }
 .navigation div {
   flex: 3;
@@ -58,31 +68,37 @@ body {
   text-decoration: none;
 }
 .normal {
-  font-family: 'Quicksand', serif;
-  font-size: 1vw;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5rem;
   color: #a2a2a2;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1pt;
 }
 .active {
-  font-family: 'Quicksand Bold', serif;
+  font-family: 'Crimson Text', serif;
   color: #D8D8D8;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1vw;
+  font-size: 1.5rem;
+  letter-spacing: 1pt;
 }
 footer {
   width: 100vw;
-  bottom: 2vh;
+  bottom: 0px;
+  box-sizing: border-box;
+  padding: 5vh;
   position: relative;
-  font-family: 'Quicksand Bold', sans-serif;
-  font-size: 0.9vw;
-  text-align: center;
-  color: #d8d8d8;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: center;  
+  color: #fff;
   z-index: 1000; /* Ensure footer is above other content */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 5px #000;
 }
 footer a {
   text-decoration: none;
-  color: #d8d8d8;
+  color: #fff;
 }

@@ -1,0 +1,15 @@
+/* page.module.css */
+.pageContainer {
+    background-image: url('/styles/hills.jpg');
+    /* other styles */
+  }
+  
+  .pageContainer .container {
+    background: none; /* Override global background for this specific container */
+    /* other container styles */
+    width: 100%;
+    height: 50vh;
+    top: 0px;
+    margin: 0px;
+    position: absolute;
+  }

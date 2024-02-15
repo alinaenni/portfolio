@@ -3,14 +3,15 @@ import styles from '../styles/homelayout.module.css';
 import Link from 'next/link';
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-
-
+import AlternateTimeline from '../components/timelinemui';
+        
 export default function HomeLayout() {
   return (
     <div className={styles.pageContainer}>
       <Head>
         <title>Portfolio | Alina Rouvinen</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
       <div className={styles.backgroundContainer}>
@@ -22,39 +23,31 @@ export default function HomeLayout() {
             </div>
             <div className="navigation">
               <div><Link href="/index"><div className="active">Home</div></Link></div>
-              <div><Link href="/blog"><div className="normal">Blog</div></Link></div>
-              <div><Link href="/contact"><div className="normal">Contact</div></Link></div>
+              <div><Link href="/blog"><div className="normal">Projects</div></Link></div>
+              <div><Link href="/contact"><div className="normal">Socials</div></Link></div>
             </div>
           </div>
 
           <div className={styles.introtext}>
-            Welcome!<br />
-            My name is Alina, and this is my
+            <h3>Hi there, nice to meet you</h3>
+            My name is Alina. I named this site after the concept of supersymmetry because I love 
+            learning about particle physics. And because it's a cool word.<br /><br />
+  
+            This is my
             <TypeAnimation 
               sequence={[' professional portfolio.', 3000, ' personal blog.', 3000, ' dynamic curriculum vitae.', 3000]}
               speed={80}
               repeat={Infinity}
-            /><br />
-
-            <p>I named this place <i>Supersymmetry</i> because I am fascinated by particle physics and because I simply like the word.</p>
-
+            />
           </div>
         </div>
 
-        <div className={styles.me}>
-          <div className={styles.info}>
-          <h1>
-          My academic background is in linguistics and phonetics, 
-          but I have always been interested in web development and design. I 
-          currently work as a technical writer.</h1>
-          </div>
-          <div className={styles.pic}>
-          </div>
+        <div className={styles.timeline}>
+          <AlternateTimeline />
         </div>
         
         <footer>
-          <p>Web design by Alina</p>
-          <p>Background image by <a href="https://www.pexels.com/@shtefutsa/">Andras Stefuca</a></p>
+          <p>Web design by Alina Rouvinen 2024</p>
         </footer>
   </div>
 </div>

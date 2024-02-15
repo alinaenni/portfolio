@@ -8,6 +8,7 @@ export default function Blog() {
     <Bloglayout>
         <Head>
             <title>First Post</title>
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
       <h1>Catch me or I go Houdini</h1>
