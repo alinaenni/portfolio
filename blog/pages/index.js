@@ -10,7 +10,6 @@ export default function HomeLayout() {
     <div className={styles.pageContainer}>
       <Head>
         <title>Portfolio | Alina Rouvinen</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
@@ -35,7 +34,7 @@ export default function HomeLayout() {
   
             This is my
             <TypeAnimation 
-              sequence={[' professional portfolio.', 3000, ' personal blog.', 3000, ' dynamic curriculum vitae.', 3000]}
+              sequence={[' professional portfolio.', 3000, ' personal blog.', 3000, ' dynamic curriculum vitae.', 3000, ' pet project.', 3000]}
               speed={80}
               repeat={Infinity}
             />

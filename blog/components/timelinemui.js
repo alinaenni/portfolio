@@ -7,7 +7,6 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
-
 import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
@@ -78,8 +77,8 @@ export default function AlternateTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-          <Typography variant="h6">December 2023</Typography>
-          Learning to build with React
+          <Typography variant="h6">2023</Typography>
+          Learned to design and build projects with Figma and React
           </TimelineContent>
         </TimelineItem>
 
@@ -99,6 +98,20 @@ export default function AlternateTimeline() {
         <TimelineItem>
           <TimelineSeparator>
           <TimelineDot>
+              <FavoriteBorderOutlinedIcon style={{ fontSize: '3.5rem' }} />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+          <Typography variant="h6">2022</Typography>
+          Learned Python for LLM projects and data analysis<br />
+          <Typography variant="h5">University of Helsinki</Typography>
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineSeparator>
+          <TimelineDot>
               <WorkOutlineOutlinedIcon style={{ fontSize: '3.5rem' }} />
             </TimelineDot>
             <TimelineConnector />
@@ -111,29 +124,42 @@ export default function AlternateTimeline() {
         </TimelineItem>
 
         <TimelineItem>
-          <TimelineSeparator>
-          <TimelineDot>
-              <WorkOutlineOutlinedIcon style={{ fontSize: '3.5rem' }} />
+        <TimelineSeparator>
+        <TimelineDot>
+              <SchoolOutlinedIcon style={{ fontSize: '3.5rem' }} />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-          <Typography variant="h6">October 2021</Typography>
-          Think Corner Host<br />
-          <Typography variant="h5">Think Corner</Typography>
+          <Typography variant="h6">May 2021</Typography>
+          MA Linguistics and English Language<br />
+          <Typography variant="h5">University of Edinburgh</Typography>
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineSeparator>
+          <TimelineDot>
+              <FavoriteBorderOutlinedIcon style={{ fontSize: '3.5rem' }} />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+          <Typography variant="h6">2017</Typography>
+          Learned programming basics in C<br />
+          <Typography variant="h5">University of Edinburgh</Typography>
           </TimelineContent>
         </TimelineItem>
 
         <TimelineItem>
         <TimelineSeparator>
         <TimelineDot>
-              <SchoolOutlinedIcon style={{ fontSize: '3.5rem' }} />
+              <FavoriteBorderOutlinedIcon style={{ fontSize: '3.5rem' }} />
             </TimelineDot>
           </TimelineSeparator>
           <TimelineContent>
-          <Typography variant="h6">May 2021</Typography>
-          MA Linguistics and English Language<br />
-          <Typography variant="h5">University of Edinburgh</Typography>
+          <Typography variant="h6">Middle school</Typography>
+          Learned HTML and CSS for web development<br />
           </TimelineContent>
         </TimelineItem>
 

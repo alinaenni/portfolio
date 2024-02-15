@@ -34,8 +34,8 @@
 .headerbox {
   display: flex;
   width: 100%;
-  min-height: 70vh;
-  background-color: rgba(0,0,0,0.7);
+  min-height: 75vh;
+  background-color: rgba(20,20,40,0.4);
   flex-direction: column; /* Set the flex direction to column */
   align-items: center; /* Align content vertically in the center */
   justify-content: center;
@@ -48,7 +48,7 @@
   line-height: 6vh;
   box-sizing: border-box;
   font-family: 'Crimson Text Italic', sans-serif;
-  font-size: 1.9rem;
+  font-size: 2rem;
   letter-spacing: 1pt;
   color: #D8D8D8;
   text-align: left;
