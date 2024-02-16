@@ -1,13 +1,4 @@
 @font-face {
-  font-family: 'Courier Prime';
-  src: url('/fonts/CourierPrime-Italic.ttf');
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Bodoni Moda';
-  src: url('/fonts/BodoniModa-VariableFont.ttf');
-}
-@font-face {
   font-family: 'Crimson Text';
   src: url('/fonts/CrimsonText-Reg.ttf');
 }
@@ -34,24 +25,36 @@
 .headerbox {
   display: flex;
   width: 100%;
-  min-height: 75vh;
-  background-color: rgba(20,20,40,0.4);
+  min-height: 40vh;
+  background-color: rgba(15,20,40,0.4);
   flex-direction: column; /* Set the flex direction to column */
-  align-items: center; /* Align content vertically in the center */
-  justify-content: center;
-  padding-bottom: 8vh;
+  padding-top: 0px;
+  padding-bottom: 3vh;
   box-sizing: border-box;
 }
 .introtext {
   width: 50vw;
-  margin-top: 3vh;
+  margin: 0 auto;
   line-height: 6vh;
   box-sizing: border-box;
+  margin-bottom: 6vh;
   font-family: 'Crimson Text Italic', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 1pt;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
   color: #D8D8D8;
   text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.introtext2 {
+  width: 50vw;
+  box-sizing: border-box;
+  font-family: 'Crimson Text Italic', sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+  color: #D8D8D8;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 6vh;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .timeline {

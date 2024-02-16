@@ -7,31 +7,6 @@ body {
   height: 100%;
 }
 @font-face {
-  font-family: 'Bodoni Moda';
-  src: url('/fonts/BodoniModa-VariableFont.ttf');
-}
-@font-face {
-  font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-Regular.ttf');
-}
-@font-face {
-  font-family: 'Quicksand Bold';
-  src: url('/fonts/Quicksand-Bold.ttf');
-}
-@font-face {
-  font-family: 'Courier Prime';
-  src: url('/fonts/CourierPrime-Regular.ttf');
-}
-@font-face {
-  font-family: 'Courier Prime';
-  src: url('/fonts/CourierPrime-Italic.ttf');
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Crimson Text';
-  src: url('/fonts/CrimsonText-Reg.ttf');
-}
-@font-face {
   font-family: 'Crimson Text';
   src: local('CrimsonText-Reg'), url('/fonts/CrimsonText-Reg.ttf') format('truetype');
   font-weight: normal;
@@ -41,10 +16,11 @@ body {
   width: 60vw;
   display: flex;
   margin: 0 auto;
+  position: relative;
   top: 0px;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
+  height: 20vh;
   color: #d8d8d8;
   z-index: 1000; /* Ensure navbar is above other content */
 }
@@ -66,20 +42,20 @@ body {
 }
 .navigation a {
   text-decoration: none;
-}
-.normal {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.5rem;
   color: #a2a2a2;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5rem;
   letter-spacing: 1pt;
+  transition-delay: 250ms;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
 }
-.active {
-  font-family: 'Crimson Text', serif;
-  color: #D8D8D8;
-  text-decoration: none;
+.navigation a:hover {
+  color: #fff;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 1.5rem;
   letter-spacing: 1pt;
 }
