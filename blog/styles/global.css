@@ -36,8 +36,8 @@ body {
   font-size: 2.2rem;
   letter-spacing: 1pt;
   text-decoration: none;
-  color: #d8d8d8;
-  text-shadow: 0px 0px 16px rgba(255,255,255,0.4);
+  color: #a2a2a2;
+  /*text-shadow: 0px 0px 15px rgba(255,255,255,0.3);*/
 }
 .navigation {
   flex: 5; 
@@ -54,17 +54,18 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   letter-spacing: 1pt;
-  transition-delay: 250ms;
-  transition-property: color;
+  transition-delay: 0ms;
+  transition-property: color, text-shadow;
   transition-timing-function:linear;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 .navigation a:hover {
-  color: #fff;
+  color: #d8d8d8;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.5rem;
   letter-spacing: 1pt;
+  text-shadow: 0px 0px 15px rgba(255,255,255,0.3);
 }
 footer {
   width: 100vw;
@@ -79,7 +80,7 @@ footer {
   text-align: center;  
   color: #fff;
   z-index: 1000; /* Ensure footer is above other content */
-  text-shadow: 1px 1px 5px #000;
+  text-shadow: 0px 0px 1px #000;
 }
 footer a {
   text-decoration: none;
