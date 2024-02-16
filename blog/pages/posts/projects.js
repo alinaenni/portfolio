@@ -13,9 +13,10 @@ export default function Projectspage() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
-      <Basiclayout introText={<Intronormal><h3>Projects and posts</h3></Intronormal>}>
-        {/* Page content goes here */}
-
+      <Basiclayout introText={<Intronormal>
+        <h3>Projects and posts</h3>
+        See what I've been up to recently</Intronormal>}>
+        {/* Page content */}
       </Basiclayout>
       
     </div>

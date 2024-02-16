@@ -13,9 +13,10 @@ export default function Socialspage() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
-      <Basiclayout introText={<Intronormal><h3>Want to get in touch?</h3></Intronormal>}>
-        {/* Page content goes here */}
-
+      <Basiclayout introText={<Intronormal>
+        <h3>Want to get in touch?</h3>
+        Check out my socials or send a message</Intronormal>}>
+        {/* Page content */}
       </Basiclayout>
       
     </div>

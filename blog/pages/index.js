@@ -15,10 +15,10 @@ export default function Indexpage() {
       </Head>
 
       <Basiclayout introText={<Introtext />}>
-        {/* Page content goes here */}
+        {/* Page content */}
         <AlternateTimeline />
       </Basiclayout>
-      
+
     </div>
   );
 }
