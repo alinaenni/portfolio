@@ -37,6 +37,7 @@ body {
   letter-spacing: 1pt;
   text-decoration: none;
   color: #d8d8d8;
+  text-shadow: 0px 0px 16px rgba(255,255,255,0.4);
 }
 .navigation {
   flex: 5; 
@@ -55,8 +56,8 @@ body {
   letter-spacing: 1pt;
   transition-delay: 250ms;
   transition-property: color;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.1s;
+  transition-timing-function:linear;
+  transition-duration: 0.2s;
 }
 .navigation a:hover {
   color: #fff;

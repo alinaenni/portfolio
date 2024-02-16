@@ -9,7 +9,7 @@ export default function Introtext() {
             
       <h3>Hi there, nice to meet you</h3>
       My name is Alina. I named this site after the concept of supersymmetry because I love 
-      learning about particle physics. And because it's a cool word.<br /><br />
+      learning about particle physics. And because it's a cool word.<br />
 
       This is my
       <TypeAnimation 
