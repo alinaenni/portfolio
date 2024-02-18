@@ -25,8 +25,8 @@
 .headerbox {
   display: flex;
   width: 100%;
-  min-height: 40vh;
-  background-color: rgba(45,40,35,0.45);
+  min-height: 0vh;
+  background-color: rgba(35, 36, 36, 0.7);
   flex-direction: column; /* Set the flex direction to column */
   padding-top: 0px;
   padding-bottom: 3vh;
@@ -35,7 +35,7 @@
 .introtext {
   width: 50vw;
   margin: 0 auto;
-  line-height: 7vh;
+  line-height: 6vh;
   box-sizing: border-box;
   margin-bottom: 10vh;
   font-family: 'Crimson Text Italic', sans-serif;
@@ -43,19 +43,27 @@
   letter-spacing: 1px;
   color: #D8D8D8;
   text-align: left;
-  text-shadow: 0px 0px 7px rgba(255,255,255,0.2);
 }
 .introtext2 {
   width: 50vw;
   box-sizing: border-box;
-  font-family: 'Crimson Text Italic', sans-serif;
-  font-size: 2.1rem;
-  letter-spacing: 1px;
-  color: #D8D8D8;
-  text-align: left;
+  color: #a2a2a2;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 1.3rem;
+  line-height: 4vh;
   margin: 0 auto;
-  margin-bottom: 6vh;
-  text-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+  margin-bottom: 2vh;
+}
+.introtext2 h3 {
+  font-family: 'Crimson Text Italic', sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 2.5vh;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: #d8d8d8;
 }
 .timeline {
   width: 100vw;
@@ -77,7 +85,7 @@
   font-size: 1.7rem;
   color: #D8D8D8;
   margin: 0 auto;
-  width: 50vw;
+  width: 80vw;
 }
 @media (max-width: 600px) {
   .grid {

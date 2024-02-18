@@ -24,11 +24,14 @@ export default function Projectspage() {
       </Head>
 
       <Basiclayout introText={<Intronormal>
-        <h3>Projects and posts</h3>
-        See what I've been up to recently</Intronormal>} showContbox={true} showTimeline={false}>
+        <h3>Projects and content</h3>
+        See what I've been up to
+        </Intronormal>} showContbox={true} showTimeline={false}>
         
         <div className={styles.textbox}>
-          Some text here
+          
+        <Carousel />
+
         </div>
 
 
