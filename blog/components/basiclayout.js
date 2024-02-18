@@ -2,8 +2,9 @@ import React from 'react';
 import styles from '../styles/homelayout.module.css';
 import Navigation from './navigation';
 import Link from 'next/link';
+import AlternateTimeline from '../components/timelinemui';
 
-export default function Basiclayout({ introText, children }) {
+export default function Basiclayout({ introText, children, showTimeline, showContbox }) {
     return (
       <div className={styles.backgroundContainer}>
         <div className={styles.headerbox}>
@@ -13,8 +14,18 @@ export default function Basiclayout({ introText, children }) {
           </div>
           <div className={styles.introTextContainer}>{introText}</div>
         </div>
-        
-        <div className={styles.timeline}>{children}</div>
+
+        {showContbox && (
+        <div className={styles.contbox}>
+          {children}
+        </div>
+        )}
+
+        {showTimeline && (
+        <div className={styles.timeline}>
+          <AlternateTimeline />
+          </div>
+        )}
 
         <footer>
           <p>Web design by Alina Rouvinen 2024</p>

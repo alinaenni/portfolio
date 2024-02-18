@@ -15,8 +15,12 @@ export default function Socialspage() {
 
       <Basiclayout introText={<Intronormal>
         <h3>Want to get in touch?</h3>
-        Check out my socials or send a message</Intronormal>}>
-        {/* Page content */}
+        Check out my socials or send a message</Intronormal>} showContbox={true} showTimeline={false}>
+       
+        <div className={styles.textbox}>
+          Some text here
+        </div>
+
       </Basiclayout>
       
     </div>
