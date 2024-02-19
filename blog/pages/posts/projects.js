@@ -25,7 +25,6 @@ export default function Projectspage() {
 
       <Basiclayout introText={<Intronormal>
         <h3>Projects and content</h3>
-        See what I've been up to
         </Intronormal>} showContbox={true} showTimeline={false}>
         
         <div className={styles.textbox}>
