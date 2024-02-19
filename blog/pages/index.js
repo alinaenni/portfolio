@@ -15,7 +15,10 @@ export default function Indexpage() {
 
       <Basiclayout introText={<Introtext />} showGallery={false} showTimeline={true}>
       </Basiclayout>
-
+      
+      <footer>
+      <p>Web design Alina Rouvinen 2024</p>
+      </footer>
     </div>
   );
 }

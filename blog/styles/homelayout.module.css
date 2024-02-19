@@ -7,8 +7,8 @@
   src: url('/fonts/CrimsonText-Italic.ttf');
 }
 .pageContainer {
-  height: 100vh;
-  width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 .backgroundContainer {
   background-color: #f0f0f0;
@@ -17,7 +17,7 @@
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
-  min-height: 110vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@
 .headerbox {
   display: flex;
   width: 100%;
-  min-height: 0vh;
+  min-height: 40vh;
   background-color: rgba(35, 36, 36, 0.7);
   flex-direction: column; /* Set the flex direction to column */
   padding-top: 0px;
@@ -47,27 +47,21 @@
 .introtext2 {
   width: 50vw;
   box-sizing: border-box;
-  color: #a2a2a2;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  line-height: 4vh;
   margin: 0 auto;
-  margin-bottom: 2vh;
 }
 .introtext2 h3 {
   font-family: 'Crimson Text Italic', sans-serif;
   font-size: 2.6rem;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   letter-spacing: 1px;
+  margin-top: 3vh;
   text-transform: none;
   color: #d8d8d8;
+  text-align: center;
 }
 .timeline {
   width: 100vw;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.8);
   margin-top: 0px;
   box-sizing: border-box;
   padding-top: 10vh;
@@ -75,10 +69,20 @@
 }
 .contbox {
   width: 100vw;
-  min-height: 40vh;
   box-sizing: border-box;
-  padding: 5vw;
-  background-color: rgba(0,0,0,0.7);
+}
+.contbg1 {
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  padding: 2vw;
+}
+.contbg2 {
+  width: 100vw;
+  min-height:40vh;
+  background-color: rgba(0,0,0,0.8);
+  box-sizing: border-box;
+  padding: 2vw;
 }
 .textbox {
   font-family: 'Crimson Text', sans-serif;
@@ -86,6 +90,16 @@
   color: #D8D8D8;
   margin: 0 auto;
   width: 80vw;
+  box-sizing: border-box;
+  padding: 2vw;
+}
+.slide {
+  text-align: center;
+  margin-top: 2vh;
+}
+.textbox img {
+  width: 95%;
+  margin: 0 auto;
 }
 @media (max-width: 600px) {
   .grid {

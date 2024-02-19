@@ -27,9 +27,6 @@ export default function Basiclayout({ introText, children, showTimeline, showCon
           </div>
         )}
 
-        <footer>
-          <p>Web design Alina Rouvinen 2024</p>
-        </footer>
       </div>
     );
   }

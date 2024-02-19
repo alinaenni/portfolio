@@ -5,6 +5,7 @@ import Basiclayout from '../../components/basiclayout';
 import Intronormal from '../../components/intronormal';
 import Link from 'next/link';
 import Carousel from '../../components/carousel';
+import Image from "/public/images/dog1.jpg"; // Import your image here
 
 export default function Projectspage() {
   return (
@@ -27,15 +28,17 @@ export default function Projectspage() {
         <h3>Projects and content</h3>
         </Intronormal>} showContbox={true} showTimeline={false}>
         
-        <div className={styles.textbox}>
-          
-        <Carousel />
+        <div className={styles.contbg2}></div>
 
-        </div>
-
+        <div className={styles.contbg1}>
+          <div className={styles.textbox}>
+            <Carousel />
+        </div></div>
 
       </Basiclayout>
-      
+      <footer>
+      <p>Web design Alina Rouvinen 2024</p>
+      </footer>
     </div>
   );
 }

@@ -17,12 +17,15 @@ export default function Socialspage() {
         <h3>Want to get in touch?</h3>
         </Intronormal>} showContbox={true} showTimeline={false}>
        
-        <div className={styles.textbox}>
-          Some text here
-        </div>
+        <div className={styles.contbg2}>
+          <div className={styles.textbox}>
+            Some text here
+        </div></div>
 
       </Basiclayout>
-      
+      <footer>
+      <p>Web design Alina Rouvinen 2024</p>
+      </footer>
     </div>
   );
 }
