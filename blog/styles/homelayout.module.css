@@ -30,7 +30,7 @@
   background: linear-gradient(0deg, rgba(10,10,10,0.8) 0%, rgba(35,36,36,0.8) 80%, rgba(35,36,36,0.7) 100%);
   flex-direction: column; /* Set the flex direction to column */
   padding-top: 0px;
-  padding-bottom: 3vh;
+  padding-bottom: 0vh;
   box-sizing: border-box;
 }
 .introtext {
@@ -67,6 +67,7 @@
   box-sizing: border-box;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  color: #a2a2a2;
 }
 .contbox {
   width: 100vw;

@@ -28,6 +28,7 @@ const theme = createTheme({
         styleOverrides: {
           h6: {
             textTransform: 'uppercase',
+            color: '#a2a2a2',
           },
         },
       },
