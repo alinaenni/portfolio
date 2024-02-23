@@ -12,6 +12,14 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Regular.ttf');
+}
+@font-face {
+  font-family: 'Quicksand Bold';
+  src: url('/fonts/Quicksand-Bold.ttf');
+}
 .navbar {
   width: 60vw;
   display: flex;
@@ -36,7 +44,7 @@ body {
   font-size: 2.2rem;
   letter-spacing: 1pt;
   text-decoration: none;
-  color: #a2a2a2;
+  color: #d8d8d8;
 }
 .navigation {
   flex: 5; 
@@ -51,7 +59,7 @@ body {
   color: #a2a2a2;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 1.5pt;
   transition-delay: 0ms;
   transition-property: color;
@@ -68,9 +76,9 @@ footer {
   bottom: 0;
   box-sizing: border-box;
   padding: 3vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 1.5px;
   text-align: center;  
   background-color: #000;

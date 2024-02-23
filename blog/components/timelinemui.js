@@ -17,7 +17,7 @@ const theme = createTheme({
         styleOverrides: {
           root: {
             fontFamily: 'Crimson Text',
-            fontSize: '1.9rem',
+            fontSize: '1.8rem',
             textShadow: '1px 1px 2px #000',
             color: '#d8d8d8',
             backgroundColor: 'transparent', // Set the background color globally
@@ -27,9 +27,18 @@ const theme = createTheme({
       MuiTypography: {
         styleOverrides: {
           h6: {
+            fontFamily: 'Quicksand',
+            fontSize: '1.4rem',
             textTransform: 'uppercase',
             color: '#a2a2a2',
+            marginBottom: '1vh',
           },
+          h5: {
+            fontFamily: 'Crimson Text Italic',
+            color: '#d8d8d8',
+            textTransform: 'none',
+            fontSize: '1.8rem',
+          }
         },
       },
       MuiTimelineDot: {
