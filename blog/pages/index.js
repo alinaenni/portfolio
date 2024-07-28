@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/homelayout.module.css';
 import Basiclayout from '../components/basiclayout';
 import Introtext from '../components/introtext';
+import Contact from '../components/footer';
 import Link from 'next/link';
 
 export default function Indexpage() {
@@ -13,12 +14,9 @@ export default function Indexpage() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
-      <Basiclayout introText={<Introtext />} showGallery={false} showTimeline={true}>
+      <Basiclayout introText={<Introtext />} showGallery={false} showTimeline={true} showContbox={false}>
       </Basiclayout>
       
-      <footer>
-      <p>Web design Alina Rouvinen 2024</p>
-      </footer>
     </div>
   );
 }

@@ -7,16 +7,14 @@ export default function Introtext() {
 
       <div className={styles.introtext}>
             
-      <h3>Hi there, nice to meet you</h3>
-      My name is Alina. I named this site after the concept of supersymmetry because I love 
-      learning about particle physics. And because it's a cool word.<br />
+        <h3>Good, you're here</h3>
+          I'm Alina, and I'm the creator of this place. Go on, take a look around my
 
-      This is my
-      <TypeAnimation 
-        sequence={[' professional portfolio.', 3000, ' personal blog.', 3000, ' dynamic curriculum vitae.', 3000, ' pet project.', 3000]}
-        speed={80}
-        repeat={Infinity}
-      />
+        <TypeAnimation 
+          sequence={[' professional portfolio.', 3000, ' personal blog.', 3000, ' dynamic curriculum vitae.', 3000, ' pet project.', 3000]}
+          speed={120}
+          repeat={Infinity}
+        />
      </div>
 
     );

@@ -16,28 +16,29 @@ const theme = createTheme({
       MuiTimelineContent: {
         styleOverrides: {
           root: {
-            fontFamily: 'Crimson Text',
-            fontSize: '1.8rem',
-            textShadow: '1px 1px 2px #000',
-            color: '#d8d8d8',
+            fontFamily: 'Quicksand',    // Place or location
+            fontSize: '1.5rem',
+            color: '#a3a3a3',
+            lineHeight: '3vh',
             backgroundColor: 'transparent', // Set the background color globally
           },
         },
       },
       MuiTypography: {
         styleOverrides: {
-          h6: {
+          h6: {  // Month and year
             fontFamily: 'Quicksand',
-            fontSize: '1.4rem',
-            textTransform: 'uppercase',
-            color: '#a2a2a2',
-            marginBottom: '1vh',
-          },
-          h5: {
-            fontFamily: 'Crimson Text Italic',
-            color: '#d8d8d8',
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
             textTransform: 'none',
-            fontSize: '1.8rem',
+            color: '#a3a3a3',
+          },
+          h5: {  // Accomplishment
+            fontFamily: 'Quicksand',
+            color: '#c7c7c7',
+            textTransform: 'none',
+            fontSize: '1.9rem',
+            marginTop: '1.5vh',
           }
         },
       },
@@ -52,8 +53,8 @@ const theme = createTheme({
         styleOverrides: {
           root: {
             borderColor: 'white', // Color of the connector
-            width: '0.20vw', // Thickness of the connector
-            minHeight: '12vh', // Length of the connector
+            width: '0.18vw', // Thickness of the connector
+            minHeight: '10vh', // Length of the connector
           },
         },
       },
@@ -64,6 +65,21 @@ export default function AlternateTimeline() {
   return (
     <ThemeProvider theme={theme}>
       <Timeline position="alternate">
+
+      <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot>
+              <SchoolOutlinedIcon style={{ fontSize: '3.5rem' }} />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography variant="h6">August 2024</Typography>
+            Haaga-Helia university of applied sciences<br />
+            <Typography variant="h5">Start of data processing studies</Typography>
+            </TimelineContent>
+        </TimelineItem>
+
         <TimelineItem>
           <TimelineSeparator>
 
@@ -74,8 +90,8 @@ export default function AlternateTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <Typography variant="h6">February 2024</Typography>
-            MA Linguistic Diversity and Digital Humanities<br />
-            <Typography variant="h5">University of Helsinki</Typography>
+            University of Helsinki<br />
+            <Typography variant="h5">Completed master's degree</Typography>
             </TimelineContent>
         </TimelineItem>
 
@@ -88,21 +104,8 @@ export default function AlternateTimeline() {
           </TimelineSeparator>
           <TimelineContent>
           <Typography variant="h6">2023</Typography>
-          Learned to design and build projects with Figma and React
+          <Typography variant="h5">Began building projects with Figma and React</Typography>
           </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineSeparator>
-          <TimelineDot>
-              <WorkOutlineOutlinedIcon style={{ fontSize: '3.5rem' }} />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-          <Typography variant="h6">June 2023</Typography>
-          Technical Writer<br />
-          <Typography variant="h5">FA Solutions</Typography></TimelineContent>
         </TimelineItem>
 
         <TimelineItem>
@@ -114,22 +117,8 @@ export default function AlternateTimeline() {
           </TimelineSeparator>
           <TimelineContent>
           <Typography variant="h6">2022</Typography>
-          Learned Python for LLM projects and data analysis<br />
-          <Typography variant="h5">University of Helsinki</Typography>
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineSeparator>
-          <TimelineDot>
-              <WorkOutlineOutlinedIcon style={{ fontSize: '3.5rem' }} />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-          <Typography variant="h6">March 2022</Typography>
-          Technical Communication Trainee<br />
-          <Typography variant="h5">Nokia</Typography>
+          University of Helsinki<br />
+          <Typography variant="h5">Learned Python and R for LLM projects and data analysis</Typography>
           </TimelineContent>
         </TimelineItem>
 
@@ -142,8 +131,8 @@ export default function AlternateTimeline() {
           </TimelineSeparator>
           <TimelineContent>
           <Typography variant="h6">May 2021</Typography>
-          MA Linguistics and English Language<br />
-          <Typography variant="h5">University of Edinburgh</Typography>
+          University of Edinburgh<br />
+          <Typography variant="h5">Completed bachelor's degree</Typography>
           </TimelineContent>
         </TimelineItem>
 
@@ -156,8 +145,8 @@ export default function AlternateTimeline() {
           </TimelineSeparator>
           <TimelineContent>
           <Typography variant="h6">2017</Typography>
-          Learned programming basics in C<br />
-          <Typography variant="h5">University of Edinburgh</Typography>
+          University of Edinburgh<br />
+          <Typography variant="h5">Started programming in C</Typography>
           </TimelineContent>
         </TimelineItem>
 
@@ -169,7 +158,7 @@ export default function AlternateTimeline() {
           </TimelineSeparator>
           <TimelineContent>
           <Typography variant="h6">Middle school</Typography>
-          Learned HTML and CSS for web development<br />
+          <Typography variant="h5">Learned HTML and CSS for web development</Typography>
           </TimelineContent>
         </TimelineItem>
 

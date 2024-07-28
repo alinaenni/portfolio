@@ -6,8 +6,8 @@ export default function Navigation() {
 
         <div className="navigation">
         <div><Link href="/">Home</Link></div>
+        <div><Link href="/posts/gallery">Gallery</Link></div>
         <div><Link href="/posts/projects">Projects</Link></div>
-        <div><Link href="/posts/socials">Socials</Link></div>
       </div>
 
     );
